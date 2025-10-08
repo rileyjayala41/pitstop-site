@@ -15,9 +15,9 @@ header {
   color: white;
 }
 
-logo {
-  width: 2400px;
-  max-width: 190%;
+.logo {
+  width: 240px;
+  max-width: 90%;
   margin-bottom: 1rem;
 }
 
