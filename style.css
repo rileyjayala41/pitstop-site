@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-image: url('../public/checkered.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: 240px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+nav {
+  text-align: center;
+  background-color: #111;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  margin: 0 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.services-list li {
+  padding: 1rem;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.quote-btn {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.quote-btn:hover {
+  background-color: #ccc;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
