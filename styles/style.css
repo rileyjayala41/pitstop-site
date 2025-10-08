@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url('checkered.png');
+  background-image: url('../checkered.png');
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;
