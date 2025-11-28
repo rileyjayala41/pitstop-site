@@ -1,0 +1,12 @@
+# robots.txt for Pit Stop Automotive
+# https://pitstopautomotive.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pitstopautomotive.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to the server)
+Crawl-delay: 1
+

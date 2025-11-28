@@ -1,42 +1,314 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index</title>
-  <link href="https://fonts.googleapis.com/css2?family=orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Primary SEO -->
+  <title>Mobile Mechanic & Auto Detailing Austin TX | Pit Stop Automotive</title>
+  <meta name="description" content="Austin's trusted mobile mechanic & auto detailing service. We come to you! Oil changes from $100, brake pads from $100, full detailing from $120. Serving Austin, Round Rock, Pflugerville, Cedar Park & Georgetown. Call for a free quote!" />
+  <meta name="keywords" content="mobile mechanic Austin TX, mobile auto repair Austin, mobile car detailing Austin, mobile oil change Austin, mobile brake service Austin, on-site auto repair Austin, mobile auto care Texas, car repair at home Austin" />
+  
+  <!-- Canonical URL (update with your actual domain) -->
+  <link rel="canonical" href="https://pitstopautomotive.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pitstopautomotive.com/" />
+  <meta property="og:title" content="Mobile Mechanic & Auto Detailing Austin TX | Pit Stop Automotive" />
+  <meta property="og:description" content="Austin's trusted mobile mechanic & auto detailing service. We come to you! Oil changes, brakes, tune-ups & full detailing. Free quotes!" />
+  <meta property="og:image" content="https://pitstopautomotive.com/logo.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Pit Stop Automotive" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mobile Mechanic & Auto Detailing Austin TX | Pit Stop Automotive" />
+  <meta name="twitter:description" content="Austin's trusted mobile mechanic & auto detailing service. We come to you! Free quotes!" />
+  <meta name="twitter:image" content="https://pitstopautomotive.com/logo.png" />
+  
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Austin" />
+  <meta name="geo.position" content="30.2672;-97.7431" />
+  <meta name="ICBM" content="30.2672, -97.7431" />
+  
+  <!-- Additional SEO Meta -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Pit Stop Automotive" />
+  <meta name="theme-color" content="#000000" />
+  
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
+  
+  <!-- Favicon (add your favicon files) -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("mGe0IsN8N27Vi46ud");
+    })();
+    function sendEmail(e) {
+      e.preventDefault();
+      document.getElementById("submitBtn").innerText = "Sending...";
+      emailjs.sendForm('service_1ht5nx8', 'template_v0wosmc', e.target)
+        .then(() => {
+          document.getElementById("submitBtn").innerText = "Sent!";
+          document.getElementById("confirmation").style.display = "block";
+          e.target.reset();
+        }, (error) => {
+          document.getElementById("submitBtn").innerText = "Error. Try again";
+          console.log('FAILED...', error);
+        });
+    }
+  </script>
+  
+  <!-- Schema.org Structured Data - LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Pit Stop Automotive",
+    "description": "Mobile mechanic and auto detailing services in Austin, TX. We come to your location for oil changes, brake service, tune-ups, diagnostics, and full car detailing.",
+    "url": "https://pitstopautomotive.com",
+    "logo": "https://pitstopautomotive.com/logo.png",
+    "image": "https://pitstopautomotive.com/logo.png",
+    "telephone": "",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.2672,
+      "longitude": -97.7431
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Austin",
+        "sameAs": "https://en.wikipedia.org/wiki/Austin,_Texas"
+      },
+      {
+        "@type": "City",
+        "name": "Round Rock"
+      },
+      {
+        "@type": "City",
+        "name": "Pflugerville"
+      },
+      {
+        "@type": "City",
+        "name": "Cedar Park"
+      },
+      {
+        "@type": "City",
+        "name": "Georgetown"
+      }
+    ],
+    "serviceType": ["Mobile Mechanic", "Auto Detailing", "Oil Change", "Brake Service", "Engine Diagnostics", "Tune-Up"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Mobile Auto Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brake Pad Replacement",
+            "description": "Mobile brake pad replacement service at your location"
+          },
+          "price": "100",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "valueAddedTaxIncluded": false,
+            "description": "Starting price, parts additional"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Oil Change",
+            "description": "Mobile oil change service at your location"
+          },
+          "price": "100",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Engine Diagnostics",
+            "description": "Full vehicle diagnostics and check engine light service"
+          },
+          "price": "50",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Auto Detailing",
+            "description": "Interior car detailing service"
+          },
+          "price": "120",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "1"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Satisfied Customer"
+      },
+      "reviewBody": "They came to my driveway and knocked it out. Saved me time and stress. Highly recommend Pit Stop!"
+    }
+  }
+  </script>
+  
+  <!-- FAQ Schema for Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What areas do you serve in Austin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We proudly serve Austin, Round Rock, Pflugerville, Cedar Park, Georgetown, and surrounding areas within a 20-mile radius of Austin, TX."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a mobile oil change cost in Austin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mobile oil changes start at $100. We come to your home or office in Austin and the surrounding areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer mobile brake service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Mobile brake pad replacement starts at $100 plus parts. We come to your location anywhere in the Austin metro area."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <div class="header-text">
-    <img src="logo.png" alt="Pit Stop Logo" class="logo" />
-    <h1>Pit Stop Automotive</h1>
-    <p>Mobile Auto Care — Austin, TX</p>
+      <img src="logo.png" alt="Pit Stop Automotive - Mobile Mechanic Austin TX Logo" class="logo" width="400" height="auto" />
+      <h1>Pit Stop Automotive</h1>
+      <p>Mobile Mechanic & Auto Detailing — Austin, TX</p>
+    </div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="booking.html">Booking</a>
     <a href="about.html">About</a>
   </nav>
 
-  <main>
-    
-      <section>
-        <h2>Welcome to Pit Stop</h2>
-        <p>We bring expert detailing and mechanic services straight to your location. No shop. No waiting. Just honest mobile service.</p>
+  <main class="container">
+    <article>
+      <section id="intro">
+        <h2>We Come to You</h2>
+        <p>Skip the shop. Our mobile mechanics bring expert auto care to your driveway, office, or anywhere in Austin.</p>
         <div class="cta">
-          <a class="quote-btn" href="https://pitstopautomotive.vercel.app" target="_blank">Get a Free Quote</a>
+          <a class="quote-btn" href="#quote-form">Get a Free Quote</a>
         </div>
       </section>
-    
+
+      <section id="services">
+        <h2>Services & Pricing</h2>
+        <ul class="services-list ul">
+          <li><strong>Oil Change:</strong> from $100</li>
+          <li><strong>Brake Pads:</strong> from $100 + parts</li>
+          <li><strong>Diagnostics:</strong> from $50</li>
+          <li><strong>Full Detail:</strong> from $120</li>
+          <li><strong>Tune-Ups & Suspension:</strong> quote</li>
+        </ul>
+        <p class="service-areas">Serving <strong>Austin</strong>, Round Rock, Pflugerville, Cedar Park & Georgetown</p>
+      </section>
+
+      <section id="quote-form">
+        <h2>Get Your Quote</h2>
+        <form onsubmit="sendEmail(event)" aria-label="Quote request form">
+          <label for="name" class="sr-only">Full Name</label>
+          <input class="input" type="text" id="name" name="name" placeholder="Full Name" required aria-required="true" />
+          
+          <label for="phone" class="sr-only">Phone Number</label>
+          <input class="input" type="tel" id="phone" name="phone" placeholder="Phone Number" required aria-required="true" />
+          
+          <label for="address" class="sr-only">Service Address</label>
+          <input class="input" type="text" id="address" name="address" placeholder="Service Address" required aria-required="true" />
+          
+          <label for="vehicle" class="sr-only">Vehicle Information</label>
+          <input class="input" type="text" id="vehicle" name="vehicle" placeholder="Vehicle (Year, Make, Model)" required aria-required="true" />
+          
+          <label for="service" class="sr-only">Service Type</label>
+          <select class="input" id="service" name="service" required aria-required="true">
+            <option value="">Choose a Service</option>
+            <option value="oil">Oil Change</option>
+            <option value="brakes">Brake Service</option>
+            <option value="detail">Full Detail</option>
+            <option value="tuneup">Tune-Up</option>
+            <option value="diagnosis">Diagnostics</option>
+            <option value="jumpstart">Jump Start / Battery</option>
+            <option value="other">Other</option>
+          </select>
+          
+          <label for="message" class="sr-only">Message</label>
+          <textarea class="input" id="message" name="message" placeholder="What's going on?" rows="3"></textarea>
+          
+          <button class="quote-btn" type="submit" id="submitBtn">Request Quote</button>
+        </form>
+        <div id="confirmation" class="confirmation" role="alert">Thanks! We'll be in touch shortly.</div>
+      </section>
+
+      <section id="testimonials">
+        <blockquote class="testimonial">
+          <p>"Came to my driveway and knocked it out. Saved me time and stress. Highly recommend!"</p>
+        </blockquote>
+      </section>
+    </article>
   </main>
 
   <footer>
-    <p>© 2025 Pit Stop Automotive — All rights reserved.</p>
+    <p>© 2025 Pit Stop Automotive — Mobile Mechanic & Auto Detailing Austin, TX — All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> | 
+      <a href="services.html">Services</a> | 
+      <a href="about.html">About Us</a>
+    </nav>
   </footer>
 </body>
 </html>

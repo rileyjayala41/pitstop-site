@@ -1,45 +1,306 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Primary SEO -->
+  <title>Mobile Mechanic Services Austin TX | Oil Change, Brakes, Detailing | Pit Stop</title>
+  <meta name="description" content="Full list of mobile auto services in Austin TX: oil changes ($100), brake pads ($100+), engine diagnostics ($50), car detailing ($120+), tune-ups & more. We come to you! Get a free quote." />
+  <meta name="keywords" content="mobile oil change Austin TX, mobile brake service Austin, mobile car detailing Austin, engine diagnostics Austin, mobile tune-up Austin, auto repair at home Austin" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://pitstopautomotive.com/services.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pitstopautomotive.com/services.html" />
+  <meta property="og:title" content="Mobile Mechanic Services Austin TX | Pit Stop Automotive" />
+  <meta property="og:description" content="Full mobile auto services: oil changes, brakes, detailing, diagnostics & more. We come to you in Austin!" />
+  <meta property="og:image" content="https://pitstopautomotive.com/logo.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Pit Stop Automotive" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mobile Mechanic Services Austin TX | Pit Stop Automotive" />
+  <meta name="twitter:description" content="Oil changes, brakes, detailing & more. Mobile auto service in Austin!" />
+  <meta name="twitter:image" content="https://pitstopautomotive.com/logo.png" />
+  
+  <!-- Geo Tags for Local SEO -->
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Austin" />
+  <meta name="geo.position" content="30.2672;-97.7431" />
+  <meta name="ICBM" content="30.2672, -97.7431" />
+  
+  <!-- Additional SEO Meta -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Pit Stop Automotive" />
+  <meta name="theme-color" content="#000000" />
+  
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <!-- Schema.org - Service List -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Pit Stop Automotive Mobile Services",
+    "description": "Complete list of mobile mechanic and auto detailing services in Austin, TX",
+    "url": "https://pitstopautomotive.com/services.html",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "Mobile Oil Change",
+        "description": "Conventional and synthetic oil changes performed at your location in Austin, TX. Includes oil filter replacement and fluid check.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX",
+        "offers": {
+          "@type": "Offer",
+          "price": "100",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "description": "Starting price"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "Mobile Brake Service",
+        "description": "Brake pad replacement and brake system service at your home or office. Quality parts and professional installation.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX",
+        "offers": {
+          "@type": "Offer",
+          "price": "100",
+          "priceCurrency": "USD",
+          "description": "Starting at $100 plus cost of parts"
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 3,
+        "name": "Engine Diagnostics",
+        "description": "Complete vehicle diagnostics including check engine light diagnosis, computer scanning, and fault code reading.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX",
+        "offers": {
+          "@type": "Offer",
+          "price": "50",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 4,
+        "name": "Tune-Up Service",
+        "description": "Full engine tune-up including spark plugs, filters, and performance optimization for better fuel efficiency.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX"
+      },
+      {
+        "@type": "Service",
+        "position": 5,
+        "name": "Suspension Repair",
+        "description": "Shocks, struts, and suspension system repair and replacement. Improve your ride quality and handling.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX"
+      },
+      {
+        "@type": "Service",
+        "position": 6,
+        "name": "Mobile Car Detailing",
+        "description": "Interior detailing including vacuuming, dashboard cleaning, and window cleaning.",
+        "provider": {
+          "@type": "AutoRepair",
+          "name": "Pit Stop Automotive"
+        },
+        "areaServed": "Austin, TX",
+        "offers": {
+          "@type": "Offer",
+          "price": "120",
+          "priceCurrency": "USD",
+          "description": "Starting price for full detail"
+        }
+      }
+    ]
+  }
+  </script>
+  
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://pitstopautomotive.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://pitstopautomotive.com/services.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <div class="header-text">
-    <img src="logo.png" alt="Pit Stop Logo" class="logo" />
-    <h1>Pit Stop Automotive</h1>
-    <p>Mobile Auto Care — Austin, TX</p>
+      <img src="logo.png" alt="Pit Stop Automotive - Mobile Mechanic Austin TX Logo" class="logo" width="400" height="auto" />
+      <h1>Pit Stop Automotive</h1>
+      <p>Mobile Mechanic & Auto Detailing — Austin, TX</p>
+    </div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="booking.html">Booking</a>
+    <a href="services.html" aria-current="page">Services</a>
     <a href="about.html">About</a>
   </nav>
 
-  <main>
-    
-      <section>
-        <h2>Our Services</h2>
-        <ul class="services-list">
-          <li><strong>Brake Pads:</strong> Starting at $100 + parts</li>
-          <li><strong>Oil Changes:</strong> Most start at $100</li>
-          <li><strong>Diagnostics, Engine & Tune-Ups:</strong> Diagnostics start at $50</li>
-          <li><strong>Suspension:</strong> Inquire for pricing</li>
-          <li><strong>Interior & Exterior Detailing:</strong> Starting at $120</li>
+  <main class="container">
+    <article>
+      <section id="services-intro">
+        <h2>Mobile Auto Services in Austin, TX</h2>
+        <p>At <strong>Pit Stop Automotive</strong>, we bring professional <strong>mechanic and detailing services</strong> directly to your location. No need to drive to a shop or wait in line — our <strong>mobile mechanics</strong> come to you anywhere in the Austin metro area.</p>
+      </section>
+
+      <section id="oil-change" class="service-detail">
+        <h2>Mobile Oil Change — Starting at $100</h2>
+        <p>Keep your engine running smoothly with our <strong>mobile oil change service in Austin</strong>. We offer both conventional and synthetic oil options, and every service includes:</p>
+        <ul class="ul">
+          <li>Drain and replace engine oil</li>
+          <li>New oil filter installation</li>
+          <li>Fluid level check</li>
+          <li>Visual inspection</li>
+        </ul>
+        <p><strong>Why choose mobile?</strong> Save time by having your oil changed while you work from home or during your lunch break. No waiting rooms, no wasted time.</p>
+      </section>
+
+      <section id="brake-service" class="service-detail">
+        <h2>Mobile Brake Service — Starting at $100 + Parts</h2>
+        <p>Don't ignore squeaky brakes. Our <strong>mobile brake service in Austin</strong> brings professional brake repair to your driveway. Services include:</p>
+        <ul class="ul">
+          <li>Brake pad replacement</li>
+          <li>Brake rotor inspection</li>
+          <li>Brake fluid check</li>
+          <li>Complete brake system inspection</li>
+        </ul>
+        <p>We use quality parts and ensure your brakes are safe before we leave.</p>
+      </section>
+
+      <section id="diagnostics" class="service-detail">
+        <h2>Engine Diagnostics — Starting at $50</h2>
+        <p>Check engine light on? Our <strong>mobile diagnostics service</strong> will identify the problem right at your location:</p>
+        <ul class="ul">
+          <li>OBD-II computer scanning</li>
+          <li>Fault code reading and interpretation</li>
+          <li>System analysis and recommendations</li>
+          <li>Written diagnostic report</li>
+        </ul>
+        <p>Know what's wrong before committing to repairs. Transparent diagnostics with no pressure.</p>
+      </section>
+
+      <section id="tune-up" class="service-detail">
+        <h2>Tune-Up Service</h2>
+        <p>Improve your vehicle's performance and fuel efficiency with a professional <strong>mobile tune-up in Austin</strong>:</p>
+        <ul class="ul">
+          <li>Spark plug replacement</li>
+          <li>Air filter replacement</li>
+          <li>Fuel system cleaning</li>
+          <li>Performance optimization</li>
+        </ul>
+        <p>Contact us for a custom quote based on your vehicle's needs.</p>
+      </section>
+
+      <section id="suspension" class="service-detail">
+        <h2>Suspension Repair</h2>
+        <p>Rough ride? Handling issues? Our <strong>mobile suspension service</strong> can help:</p>
+        <ul class="ul">
+          <li>Shock absorber replacement</li>
+          <li>Strut replacement</li>
+          <li>Suspension system inspection</li>
+          <li>Ride quality improvement</li>
+        </ul>
+        <p>Inquire for pricing based on your vehicle and repair needs.</p>
+      </section>
+
+      <section id="detailing" class="service-detail">
+        <h2>Mobile Car Detailing — Starting at $120</h2>
+        <p>Make your car look brand new with our <strong>mobile detailing service in Austin</strong>. We bring all equipment and supplies to your location:</p>
+        <ul class="ul">
+          <li>Interior vacuuming and cleaning</li>
+          <li>Dashboard and console detailing</li>
+          <li>Window cleaning inside and out</li>
+        </ul>
+        <p>Perfect for special occasions, selling your car, or just treating yourself to a clean ride.</p>
+      </section>
+
+      <section id="service-areas">
+        <h2>Service Areas</h2>
+        <p>We provide <strong>mobile auto services</strong> throughout:</p>
+        <ul class="ul">
+          <li><strong>Austin</strong> — All neighborhoods including Downtown, South Austin, North Austin, East Austin, West Austin</li>
+          <li><strong>Round Rock</strong></li>
+          <li><strong>Pflugerville</strong></li>
+          <li><strong>Cedar Park</strong></li>
+          <li><strong>Georgetown</strong></li>
+          <li>All areas within a 20-mile radius of Austin</li>
         </ul>
       </section>
-    
+
+      <section id="cta">
+        <h2>Ready to Book Your Service?</h2>
+        <p>Get a free, no-obligation quote for any of our <strong>mobile auto services in Austin</strong>.</p>
+        <div class="cta">
+          <a class="quote-btn" href="index.html#quote-form">Get Your Free Quote</a>
+        </div>
+      </section>
+    </article>
   </main>
 
   <footer>
-    <p>© 2025 Pit Stop Automotive — All rights reserved.</p>
+    <p>© 2025 Pit Stop Automotive — Mobile Mechanic & Auto Detailing Austin, TX — All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> | 
+      <a href="services.html">Services</a> | 
+      <a href="about.html">About Us</a>
+    </nav>
   </footer>
 </body>
 </html>
+
