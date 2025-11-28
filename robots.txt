@@ -1,11 +1,11 @@
 # robots.txt for Pit Stop Automotive
-# https://pitstopautomotive.com
+# https://pitstop-site.vercel.app
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://pitstopautomotive.com/sitemap.xml
+Sitemap: https://pitstop-site.vercel.app/sitemap.xml
 
 # Crawl-delay (optional, be nice to the server)
 Crawl-delay: 1
